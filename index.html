@@ -3,24 +3,182 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/col.css">
   <link rel="stylesheet" href="css/style.css">
-  <title>Title</title>
+  <title>Tickets4u</title>
 </head>
 <body>
-
-<!-- HEADER PART  -->
-<section id="header-site"></section>
-<header>
-
-</header>
-<!-- HEADER PART END -->
 
 <!-- MAIN PART  -->
 
 <main>
+
+  <!-- HEADER PART -->
+
+  <section class="">
+    <div class="container">
+    <div class="d-flex">
+      <div class="header col-xs-12 col-sm-12 col-md-12 col-lg-5 col-xl-5">
+        <div class="header__logobox">
+          <a class="header__logo" href="/">Tickets4u</a>
+        </div>
+
+        <!-- Tickets btn  -->
+
+        <div class="btn-group d-flex" role="group" aria-label="Basic example">
+          <a href="#" class="btn btn-success active flex-column align-items-center text-center pt-3 pb-3 ps-4 pe-4 border tickets-btn" aria-current="page">
+            <i class='bx bxs-plane fs-3 text-white'></i><br>
+            Filght
+          </a>
+
+
+          <a href="#" class="btn btn-light flex-column align-items-center text-center pt-3 pb-3 ps-4 pe-4 border tickets-btn">
+            <i class='bx bxs-train fs-3 text-secondary'></i>
+            <br>
+            Trains
+          </a>
+
+          <a href="#" class="btn btn-light flex-column align-items-center text-center pt-3 pb-3 ps-4 pe-4 border tickets-btn">
+            <i class='bx bxs-ship fs-3 text-secondary'></i>
+            <br>
+            Ship
+          </a>
+
+          <a href="#" class="btn btn-light flex-column align-items-center text-center pt-3 pb-3 ps-4 pe-4 border tickets-btn">
+            <i class='bx bxs-car fs-3 text-secondary'></i>
+            <br>
+            Car
+          </a>
+      </div>
+
+      <!-- FORM PART  -->
+
+      <div class="reg">
+        <div class="reg__box">
+          <h2 class="reg__title fs-4">Best filght deals with</h2>
+          <p class="reg__brand fs-2 fw-bold text-primary
+          mb-5">Tickets4u</p>
+          <form action="https://echo.htmlacademy.ru/">
+            <p class="d-block text-black mb-1">Depart from</p>
+            <div class="input-group mb-3">
+              <span class="input-group-text bg-white" id="inputGroup-sizing-default"><i class='bx bxs-plane-take-off fs-4 text-secondary'></i></span>
+                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" placeholder="London - All Aiports, England,UK">
+              </div>
+
+              <p class="d-block text-black mb-1">Arrive at</p>
+            <div class="input-group mb-3">
+              <span class="input-group-text bg-white" id="inputGroup-sizing-default"><i class='bx bxs-plane-land fs-4 text-secondary'></i></span>
+                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" placeholder="New York - All Airports, New York, USA">
+              </div>
+
+              <div class="d-flex justify-content-between">
+                <div class="flex-column  cal-input">
+                <p class="d-block text-black mb-1">Departure Date</p>
+                <div class="input-group mb-3 ">
+                  <span class="input-group-text bg-white" id="inputGroup-sizing-default"><i class='bx bxs-calendar fs-4 text-secondary'></i></span>
+                  <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" placeholder="11/11/2022">
+                </div>
+              </div>
+                <div class="flex-column  cal-input">
+                  <p class="d-block text-black mb-1">Return Date</p>
+                  <div class="input-group mb-3">
+                    <span class="input-group-text bg-white" id="inputGroup-sizing-default"><i class='bx bxs-calendar fs-4 text-secondary'></i></span>
+                    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" placeholder="30/11/2022">
+                  </div>
+                </div>
+              </div>
+
+              <div class="d-flex justify-content-between mb-4">
+                <div class="flex-column class-input">
+                <p class="d-block text-black mb-1">Class</p>
+                <div class="input-group mb-3 ">
+                  <span class="input-group-text bg-white" id="inputGroup-sizing-default">
+                    <i class='bx bx-minus-front bx-flip-horizontal fs-4 text-secondary'></i></span>
+                  <select class="form-select" aria-label="Default select example">
+                    <option selected>Economy</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </div>
+              </div>
+                <div class="flex-column pess-input">
+                  <p class="d-block text-black mb-1">Pessengers</p>
+                  <div class="input-group mb-3">
+                    <span class="input-group-text bg-white" id="inputGroup-sizing-default"><i class='bx bxs-user fs-4 text-secondary'></i></span>
+                   <select class="form-select" aria-label="Default select example">
+                    <option selected>2</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                  </div>
+                </div>
+              </div>
+
+              <button type="submit" class="btn btn-primary w-100 text-center">FIND FLIGHT</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- TWO PART -->
+
+    <div class="search col-xs-12 col-sm-12 col-md-12 col-lg-7 col-xl-7">
+      <div class="d-flex justify-content-between mb-1">
+        <div class="d-flex flex-column">
+          <h2 class="fs-3">Search results</h2>
+          <p class="fs-6 text-secondary">We found 15 results</p>
+        </div>
+
+        <div class="btn-group d-flex justify-content-between h-50 col-xl-6" role="group" aria-label="Basic example">
+          <button type="button" class="btn btn-light m-1 rounded-pill search__btn">Left</button>
+          <button type="button" class="btn btn-light m-1 rounded-pill">Middle</button>
+          <button type="button" class="btn btn-primary m-1 rounded-pill">Right</button>
+        </div>
+      </div>
+      <p class="search__subtitle fs-5 mb-3">London <i class='bx bx-right-arrow-alt text-secondary'></i> New York</p>
+      <ul class="results">
+        <li class="results__item d-flex justify-content-between bg-white p-2 rounded-2">
+        <div class="results__imgbox">
+          <img class="results__img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQ_1oSvi1as2dLhSs1VqK8tFdN_Hh4dZyy9Q&usqp=CAU" alt="" width="100" height="100">
+        </div>
+        <div class="d-flex col-xl-6">
+          <div class="d-flex flex-column text-secondary">
+            <p class="results__text mb-1">Depart</p>
+            <p class="results__data mb-1">11/11/2020</p>
+            <p class="results__time fs-5 text-black">7:34PM</p>
+          </div>
+
+          <div class="div d-flex align-items-center justify-content-between">
+            <span class="spam ms-3 me-2">. . .</span>
+            <button class="btn bg-black text-white p-1 rounded-pill bor">Stops</button>
+            <span class="spam ms-2 me-3">. . .</span>
+          </div>
+          <span class="depart-span">03/03/2001</span>
+        </div>
+          </div>
+
+        </div>
+
+
+
+        </li>
+      </ul>
+
+
+
+
+    </div>
+  </div>
+</section>
+
+
 
 </main>
 

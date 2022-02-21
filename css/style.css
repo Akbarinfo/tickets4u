@@ -6,9 +6,10 @@
 
 body {
   min-height: 100vh;
-
+  background: linear-gradient(106deg, rgba(221,221,245,1) 65%, rgba(168,178,201,1) 65%);
   display: flex;
   flex-direction: column;
+  padding: 50px;
 }
 main {
    flex-grow: 1;
@@ -17,30 +18,86 @@ main {
 
 /* SITE HERADER PART */
 
-#header-site {
-  
+.header {
+  background-color: #f5f5fb;
+  padding: 20px 0;
 }
 
-.site-header {
-
+.header__logobox {
+  padding: 30px 0;
+  padding-left: 30px;
 }
 
-.herder-logo {
-
+.header__logo {
+  position: relative;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 23px;
+  text-decoration: none;
+  color: #000;
+}
+.header__logo:hover {
+  color: #000;
 }
 
-.header-nav {
-
+.header__logo::after {
+  content: '';
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border: 3px solid #0f700f;
+  border-left: none;
+  position: absolute;
+  top: -5px;
+  right: -10px;
 }
 
-.herder-nav-list {
+/* TICKETS BTN  */
 
+.tickets-btn:focus {
+  background-color: seagreen;
 }
 
-.herder-nav-item {
 
+/* FORM PART  */
+
+.reg__box {
+  padding: 10px 30px;
 }
 
+.cal-input {
+  width: 48%;
+}
+
+.class-input {
+  width: 60%;
+}
+
+.pess-input {
+  width: 30%;
+}
+
+
+/* SEARCH SECTION  */
+
+.search {
+  background-color: #e9eefa;
+  padding: 30px;
+}
+
+.search__btn:focus {
+  background-color: #0d6efd;
+}
+
+.bx-right-arrow-alt {
+  position: relative;
+  top: 3px;
+  padding: 0 10px;
+}
+
+.results {
+  list-style-type: none;
+}
 /* SITE HERADER PART END */
 
 
